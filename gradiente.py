@@ -28,6 +28,7 @@ def gradient_descent(X,y,beta,alpha=0.01,ninter=100):
     beta_calc, cost_hist, beta_hist = gradient_descent(X,y,beta_ini,alpha=0.1,ninter=10)
     
     """
+    X = np.asarray(X)
     
     try: X = np.append(X.reshape((len(X),1)),(np.ones((len(X),1))),axis=1)
     except: X = np.append(X,(np.ones((len(X),1))),axis=1)
